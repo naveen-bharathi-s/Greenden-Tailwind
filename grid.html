@@ -1,0 +1,262 @@
+<!-- <style>
+    header, footer{
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        /* grid-template-rows: 5fr 5fr; */
+    }
+    .header, .footer{
+        display: grid;
+        
+    }
+
+    .middle{
+        display: grid;
+    }
+    .section{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 10fr 3fr;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .main-content{
+        background-color: green;
+        padding: 5px;
+        margin: 20px;
+        height: 200px;
+    }
+    .side{
+        background-color: yellow;
+        padding: 5px;
+        margin: 20px;
+        height: 200px;
+    }
+
+   .twin{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 10fr 10fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .twin h1{
+        background-color: orange;
+        padding: 5px;
+        margin: 5px;
+        border: solid 2px orange;
+        height: 200px;
+    }
+
+</style>
+
+<div>
+    <header>
+    <h1>.header</h1>
+    </header>
+
+    <div class="middle">
+    <div class="section">
+    <h1 class="main-content">.main-content</h1>
+    <h1 class="side">.sidebar</h1>
+    </div>
+    <div class="twin">
+    <h1>.twin</h1>
+    <h1>.twin</h1>
+    </div>
+    </div>
+
+    <footer>
+        <h1>.footer</h1>
+    </footer>
+</div> -->
+
+
+<!-- <style>
+    .container{
+        background-color: red;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rebeccapurple;
+        height: 100px;
+        align-items: center;
+        margin: 5px;
+        margin-top: 5px;
+    }
+
+    .one {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 5px 150px;
+
+    }
+    .main-content{
+        background-color: rgb(191, 231, 231);
+        height: 200px;
+        margin: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .sidebar{
+        background-color: rgb(68, 103, 103);
+        height: 200px;
+        margin: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5px 150px;
+
+    }
+    .twin{
+        background-color: rgb(210, 185, 25);
+        height: 200px;
+        margin: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rgb(190, 182, 199);
+        height: 100px;
+        align-items: center;
+        margin: 5px;
+    }
+</style>
+
+
+
+<div class="container">
+    <div class="header">Header</div>
+    <div class="middle">
+        <div class="one">
+            <div class="main-content">.main-contant</div>
+            <div class="sidebar">.sidebar</div>
+        </div>
+        <div class="two">
+            <div class="twin">twin</div>
+            <div class="twin">twin</div>
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</div> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            background-color: lightblue;
+        }
+
+        .header,
+        .footer {
+            background-color: lightseagreen;
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .middle {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            /* justify-content: center;
+            text-align: center; */
+            margin: 10px;
+        }
+
+        .one {
+            background-color: rgb(102, 185, 102);
+            display: grid;
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .two {
+            background-color: orange;
+            display: grid;
+            height: 400px;
+            align-items: end;
+            justify-content: center;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .image{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .image__one{
+            background-color: rgb(242, 94, 94);
+            margin: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            padding: 50px 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="header">Header</div>
+        <div class="middle">
+            <div class="one">Aside</div>
+            <div class="two">
+                <div class="article">Article
+                    <div class="image">
+                        <div class="image__one">Image</div>
+                        <div class="image__one">Image</div>
+                        <div class="image__one">Image</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>
